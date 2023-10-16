@@ -7,7 +7,7 @@ const Card = ({ result }) => {
 		<div className='transition-shadow duration-200 rounded-lg cursor-pointer sm:p-3 sm:hover:shadow-slate-400 sm:shadow-md sm:border sm:border-slate-400 sm:m-2 group'>
 			<Link href={`/movie/${result.id}`}>
 				<Image
-					src={`http://image.tmdb.org/t/p/original/${
+					src={`https://image.tmdb.org/t/p/original/${
 						result.backdrop_path || result.poster_path
 					}`}
 					width={500}
