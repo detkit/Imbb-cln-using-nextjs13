@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { AiFillHome } from 'react-icons/ai';
 import { BsFillInfoCircleFill } from 'react-icons/bs';
+import DarkModeSwitch from './darkModeSwitch';
 import MenuItem from './menuItem';
 
 export default function Header() {
@@ -15,7 +16,8 @@ export default function Header() {
 				/>
 			</div>
 
-			<div className=''>
+			<div className='flex items-center space-x-5'>
+				<DarkModeSwitch />
 				<Link href='/'>
 					<h2 className='text-2xl'>
 						<span className='px-2 py-1 mr-1 font-bold rounded-lg bg-amber-500'>

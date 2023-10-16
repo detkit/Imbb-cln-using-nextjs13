@@ -1,0 +1,15 @@
+'use client';
+
+import { ThemeProvider } from 'next-themes';
+
+const Providers = ({ children }) => {
+	return (
+		<ThemeProvider enableSystem={true} attribute='class'>
+			<div className='min-h-screen text-gray-600 transition-colors duration-300 select-none dark:bg-gray-600 dark:text-gray-200'>
+				{children}
+			</div>
+		</ThemeProvider>
+	);
+};
+
+export default Providers;
